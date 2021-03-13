@@ -1,0 +1,51 @@
+Linear Regression: supervised learning (labelled data). A line is fit in training data with scalar arithmatic labels and the line chosen
+minimizes the Mean Square Error
+
+Logistic Regression: Supervised learning (labelled data), labels are classification groups. features can be categorical
+or numeric. A sigmoid curve is fit into the data
+
+k nearest neighbours:A Classifier which classifies a new point into a group based on number of k closest elements.
+The training data marks various point with groups which are labeled. A test point is examined for which group it
+belongs to based on maximum number of points of a group of k closest points. A simulation is run with multiple values
+of k when the rms error drops. Choose an optimal k.
+
+Decision Tree and Random Forests: The Decision Tree model tries to classify labeled data based on comparison of attribute to a
+value. The data is interpreted as a logical decision making nodes organized as a tree. Random Forest algorithm
+randomly selects a subset of features (instead of taking all of them) and evaluate which subset determines the
+labels accurately. If there is one strong feature that correlates to data strongly it is used as a top split.
+By randomly leaving out candidate features from each split, Random Forests "decorrelates" the trees, such that the
+averaging process can reduce the variance of the resulting trees.
+
+
+Support Vector Machines: Supervized learning algorithms that are used for classification. Model represents examples
+as points in space mapped so that the separate categories are divided by a clear gap. New examples are then classified
+based on which side of the gap they lie. Choosing an hyperplane that maximizes the gap between the points.
+
+
+kmeans clustering: Unlabelled data is classified into clusters. This is an unsupervised algorithm. Algorithm:
+
+1. Choose number of clusters K
+2. Randomly assign each point to each cluster
+3. Until cluster stop changing: compute cluster centroid by taking mean vector of points
+4. assign each data point to cluster for which the centroid is the closest.
+
+PCA: Principal component analysis: Dimesionality reduction
+Unsupervised statistical technique used to examine interrelations among set of variables in order to identify
+underlying structure. Where regression determines a line of best fit, PCA (aka factor analysis) determines
+several orthogonal lines of best fit to the data set. Components are a linear transformation that chooses a variable
+system for dataset such that the greatest variance of dataset comes to lie on the first axis, the second greates on the
+second and so on. This process reduces the number of variables.
+
+
+Recommender:
+
+Collaborative: Based on user's attitude to items. Uses "wisdom of crowd". E.g. Amazon based on other people's shopping experience
+
+Content based: Based on item and their similarity
+
+CF is more commonly used because it gives better results. CF hass ability to do feature learning on its own.
+CF : Memory based and Model based
+
+
+
+
